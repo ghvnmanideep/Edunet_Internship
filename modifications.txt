@@ -1,0 +1,29 @@
+1.Structural Organization:
+ The code is now logically segmented into clear steps (data loading, preprocessing, etc.) with descriptive comments explaining each section's purpose.
+
+2. Error Handling: 
+Added robust try-except blocks when loading yearly data to gracefully handle potential issues without crashing the entire process, while still logging errors for debugging.
+
+3. Data Cleaning:
+
+Automatically strips whitespace from all column names to prevent potential issues with column references
+Explicitly drops the empty 'Unnamed: 7' column that served no purpose
+Standardizes column naming between commodity and industry datasets
+
+4.Code Clarity:
+
+Added detailed docstrings and comments explaining each major operation
+Used more descriptive variable names (df_com/df_ind instead of df_1/df_2)
+Included print statements to show progress and verify outputs
+
+5.Maintainability:
+
+Created a cleaner workflow for combining annual datasets
+Structured the code to make future enhancements easier (like adding preprocessing steps)
+Separated data loading from transformation logic.
+
+6. Future-Proofing:
+
+The code structure makes it easy to add additional preprocessing steps
+Designed to handle potential data quality issues that might arise
+Includes placeholders for common data science tasks like missing value handling
